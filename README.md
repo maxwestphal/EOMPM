@@ -28,7 +28,7 @@ The R code in this part may be used to reproduce the simulation study from the p
 (b) **EOMPM_sim1_population**: create 'population' registry which contains the population datasets used to compute the true model performances in the next step.\
 (c) **EOMPM_sim2_training**: create 'training' registry which contains all candidate models fitted on the training data and cross-validation estimates.\
 (d) **EOMPM_sim3_estimation**: create 'estimation' registry which contains performance and covariance estimates for all candidate models.\
-(e) **EOMPM_sim4_evaluation**: create 'evaluation' registry which applies the specified model selection rules (based on the validation estimates) and conducts the evaluation study (based on the estimates from the last step).\
+(e) **EOMPM_sim4_evaluation**: create 'evaluation' registry which applies the specified model selection rules (based on the validation estimates) and conducts the evaluation study (based on the estimates from the last step).
 
 To reproduce all results from the publication this has to iterated over all parameter settings, i.e. over all provided scripts **EOMPM_sim0_parameters_XYZ.R**. The complete list of 19 scripts can be found in the **CONFIG** subfolder. The script **EOMPM_sim0_parameters_TEST.R** with a small number of simulation runs may be used initially to check if everything work. The most convinient way to conduct all simulations for a given set of parameter configurations is to execute the script **EOMPM_sim0_MAIN.R**.
 
@@ -48,7 +48,7 @@ The R scripts here may be used to analyze the (exported) simulation results from
 (d) **EOMPM_analysis3_power.R**\
 (e) **EOMPM_analysis4_bias.R**\
 (f) **EOMPM_analysis5_performance.R**\
-(g) **EOMPM_analysis6_perturbed.R**\
+(g) **EOMPM_analysis6_perturbed.R**
 
 Reading in all simulation results at once may lead to memory problems. In this case some of the analyses will need to be split up manually by the user. At least 16GB of memory are recommended.
 
@@ -61,5 +61,5 @@ The two scripts **EOMPM_application_A.R** and **EOMPM_application_B.R** allow to
 
 (1) 06-07-2018: Initial creation.\
 (2) 07-06-2019: Minor corrections.\
-(3) 28-07-2019: Minor formatting update.\
+(3) 28-07-2019: Minor formatting update.
 
